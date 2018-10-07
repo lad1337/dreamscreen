@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="1" failures="0" name="pytest" skips="0" tests="1" time="0.271"><testcase classname="" file="tests/unit/test_cmds.py" name="tests.unit.test_cmds" time="0"><error message="collection failure">tests/unit/test_cmds.py:3: in &lt;module&gt;
+    from dreamscreen.cmds import EnableCECPassthrough
+dreamscreen/cmds.py:22: in &lt;module&gt;
+    EnableCECPassthrough = CMD(None, b&apos;fc06004103260133&apos;)
+dreamscreen/cmds.py:8: in __init__
+    packet = Packet.from_bytes(self.raw)
+dreamscreen/utils.py:19: in from_bytes
+    return cls(**decode(bytes_))
+dreamscreen/utils.py:22: in decode
+    packet = wrap(packet, 2)
+/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/textwrap.py:379: in wrap
+    return w.wrap(text)
+/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/textwrap.py:351: in wrap
+    chunks = self._split_chunks(text)
+/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/textwrap.py:337: in _split_chunks
+    text = self._munge_whitespace(text)
+/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/textwrap.py:156: in _munge_whitespace
+    text = text.translate(self.unicode_whitespace_trans)
+E   TypeError: a bytes-like object is required, not &apos;dict&apos;</error></testcase></testsuite>
